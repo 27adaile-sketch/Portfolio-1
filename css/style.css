@@ -28,4 +28,39 @@ header h1 {
     color: #001F3F;
 }
 
-nav {}
+nav a {
+    color: #718096;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.about-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.about-text strong {
+    color: #4a5568;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
