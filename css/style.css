@@ -15,9 +15,18 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
     background-color: #000080;
-    padding: 30px 20px;
-    position: sticky;
+    border-right: 1px solid #edf2f7;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    z-index: 100;
 }
 
 .header-container {
@@ -35,8 +44,14 @@ header h1{
     color:#edf2f7
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 nav a {
-    color: #d6dce6;
+    color: #718096;
     font-size: 1.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
@@ -46,6 +61,7 @@ nav a {
 
 nav a:hover {
     color: #000000;
+    transform: translateX(4px)
 }
 
 main {
