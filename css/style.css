@@ -65,10 +65,29 @@ nav a:hover {
 }
 
 main {
+    margin-left: 260px;
+    flex: 1;
     background-color: #f7fafc;
-    padding: 60px 20px;
+}
+
+section {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 40px;
+}
+
+#education {
+    background-color: #ffffff;
     border-top: 1px solid #edf2f7;
     border-bottom: 1px solid #edf2f7;
+    max-width: 100%; 
+}
+
+
+#education .edu-item, #education h2 {
+    max-width: 770px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-container {
