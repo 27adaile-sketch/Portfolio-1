@@ -198,6 +198,19 @@ p {
     margin-bottom: 8px;
 }
 
+#skills {
+    background-color: #f7fafc;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.skills-container-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
 footer {
     margin-left: 280px;
     padding: 40px;
