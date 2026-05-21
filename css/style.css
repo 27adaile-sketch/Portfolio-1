@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
     margin: 0;
@@ -7,18 +7,18 @@
 }
 
 body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    line-height: 1.7;
+    font-family: 'Finlandica', sans-serif
+    line-height: 2.5;
     color: #2d3748;
     background-color: #ffffff;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 }
 
 header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 260px;
+    width: 280px;
     height: 100vh;
     background-color: #000080;
     border-right: 1px solid #edf2f7;
@@ -38,7 +38,7 @@ header {
 }
 
 header h1{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     letter-spacing: -0.5px;
     color:#edf2f7
@@ -52,8 +52,8 @@ nav {
 
 nav a {
     color: #718096;
-    font-size: 1.5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.7rem;
+    font-family: 'Finlandica', sans-serif;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
@@ -65,15 +65,35 @@ nav a:hover {
 }
 
 main {
-    margin-left: 260px;
+    margin-left: 280px;
     flex: 1;
     background-color: #f7fafc;
 }
 
 section {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 80px 40px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    padding: 80px 60px;
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    color: #1a202c;
+}
+
+p {
+    font-size: 1.25rem;    
+    margin-bottom: 12px;
+}
+
+#about {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../images/penn_campus.jpg') no-repeat center center;
+    background-size: cover; 
+    background-attachment: scroll;
 }
 
 #education {
@@ -91,11 +111,15 @@ section {
 }
 
 .about-container {
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .about-text h2 {
@@ -130,4 +154,30 @@ section {
     width: 45px;
     height: 45px;
     object-fit: contain;
+}
+
+#education h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    color: #1a202c;
+}
+
+.edu-item {
+    margin-top: 32px;
+}
+
+.edu-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.25rem;
+    color: #2d3748;
+    margin-bottom: 4px;
+}
+
+.date {
+    color: #718096;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
 }
