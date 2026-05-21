@@ -20,7 +20,7 @@ header {
     left: 0;
     width: 280px;
     height: 100vh;
-    background-color: #000080;
+    background-color: #aabb94;
     border-right: 1px solid #edf2f7;
     padding: 40px 30px;
     display: flex;
@@ -96,20 +96,6 @@ p {
     background-attachment: scroll;
 }
 
-#education {
-    background-color: #ffffff;
-    border-top: 1px solid #edf2f7;
-    border-bottom: 1px solid #edf2f7;
-    max-width: 100%; 
-}
-
-
-#education .edu-item, #education h2 {
-    max-width: 770px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .about-container {
     max-width: 900px;
     margin: 0 auto;
@@ -122,6 +108,10 @@ p {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
+.about-text {
+    flex: 1;
+}
+
 .about-text h2 {
     font-size: 1.8rem;
     margin-bottom: 12px;
@@ -129,35 +119,56 @@ p {
 }
 
 .about-text strong {
-    color: #000000;
+    color: #2d3748;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px transparent;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+#education {
+    background-color: #ffffff;
+    border-top: 1px solid #edf2f7;
+    border-bottom: 1px solid #edf2f7;
+    max-width: 100%; 
+}
+
+#education .edu-container-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.edu-item {
+    margin-top: 45px;
 }
 
 .edu-item h3 {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 1.25rem;
+    gap: 16px;
+    font-size: 1.6rem;
     color: #2d3748;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .edu-logo {
-    width: 45px;
-    height: 45px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 }
 
 #education h2 {
-    font-size: 1.8rem;
+    font-size: 3.25rem;
+    font-family: 'Finlandica', sans-serif;
     margin-bottom: 12px;
     letter-spacing: -0.5px;
     color: #1a202c;
@@ -168,10 +179,11 @@ p {
 }
 
 .edu-item h3 {
+    font-family: 'Finlandica', sans-serif;
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     color: #2d3748;
     margin-bottom: 4px;
 }
@@ -180,4 +192,14 @@ p {
     color: #718096;
     font-size: 0.95rem;
     margin-bottom: 8px;
+}
+
+footer {
+    margin-left: 280px;
+    padding: 40px;
+    background-color: #ffffff;
+    font-size: 1.05rem;
+    color: #a0aec0;
+    text-align: center;
+    border-top: 1px solid #edf2f7;
 }
