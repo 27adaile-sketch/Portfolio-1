@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Finlandica', sans-serif
+    font-family: 'Finlandica', sans-serif;
     line-height: 2.5;
     color: #2d3748;
     background-color: #ffffff;
@@ -256,4 +256,59 @@ footer {
     color: #a0aec0;
     text-align: center;
     border-top: 1px solid #edf2f7;
+}
+
+#experience {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #edf2f7;
+}
+
+.exp-container-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#experience h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.exp-header-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.exp-item {
+    margin-top: 45px;
+}
+
+.exp-item h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.5rem;
+    color: #000080;
+    margin-bottom: 6px;
+}
+
+.exp-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.exp-date {
+    color: #718096;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.exp-details {
+    font-size: 1.2rem;
+    color: #2d3748;
+    max-width: 800px;
 }
