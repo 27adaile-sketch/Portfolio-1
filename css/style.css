@@ -312,3 +312,20 @@ footer {
     color: #2d3748;
     max-width: 800px;
 }
+
+#projects {
+    background-color: #f7fafc;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.proj-container-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#projects h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
