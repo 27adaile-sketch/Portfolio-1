@@ -329,3 +329,87 @@ footer {
     align-items: center;
     gap: 12px;
 }
+
+.proj-header-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.02), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+}
+
+.project-header {
+    margin-bottom: 24px;
+}
+
+.project-title-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.project-title-area h3 {
+    font-size: 1.7rem;
+    color: #000080; /* Corporate Navy Accent */
+    font-weight: 700;
+}
+
+.project-status {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3182ce;
+    background-color: #ebf8ff;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    letter-spacing: 1px;
+}
+
+.project-tagline {
+    font-size: 1.25rem;
+    color: #4a5568;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 32px;
+}
+
+.project-pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 35px;
+}
+
+.pillar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #000080;
+}
+
+.pillar h4 {
+    font-size: 1.15rem;
+    color: #1a202c;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.pillar p {
+    font-size: 1.05rem;
+    color: #4a5568;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
