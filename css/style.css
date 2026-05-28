@@ -42,7 +42,7 @@ header {
 }
 
 header h1{
-    font-size: 2.8rem;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
     font-weight: 700;
     letter-spacing: -0.5px;
     color:#edf2f7
@@ -56,7 +56,7 @@ nav {
 
 nav a {
     color: #718096;
-    font-size: 1.7rem;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     font-family: 'Finlandica', sans-serif;
     text-decoration: none;
     font-weight: 500;
@@ -79,18 +79,18 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    padding: 80px 60px;
+    padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 60px);
 }
 
 h2 {
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 4vw, 3.25rem);
     margin-bottom: 24px;
     letter-spacing: -0.5px;
     color: #1a202c;
 }
 
 p {
-    font-size: 1.25rem;    
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     margin-bottom: 12px;
 }
 
@@ -105,15 +105,16 @@ p {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: clamp(20px, 4vw, 50px);
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 50px;
+    padding: clamp(25px, 5vw, 50px);
     border-radius: 16px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .about-text {
     flex: 1;
+    min-width: 280px;
 }
 
 .about-text h2 {
@@ -130,8 +131,8 @@ p {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: clamp(140px, 25vw, 200px);
+    height: clamp(140px, 25vw, 200px);
     border-radius: 50%;
     object-fit: cover;
     border: 2px transparent;
@@ -159,14 +160,14 @@ p {
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 1.6rem;
+    font-size: clamp(1.25rem, 2.5vw, 1.8rem);
     color: #2d3748;
     margin-bottom: 8px;
 }
 
 .edu-logo {
-    width: 75px;
-    height: 75px;
+    width: clamp(45px, 8vw, 75px);
+    height: clamp(45px, 8vw, 75px);
     object-fit: contain;
 }
 
@@ -242,7 +243,7 @@ p {
 }
 
 .skill-header-logo {
-    width: 75;
+    width: 75px;
     height: 75px;
     object-fit: contain;
 }
